@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      * {
+        font-family: sans-serif;
+      }
+      input {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body class="bg-[#f3f4f6]" id="Body">
+    <div
+      id="displa-of"
+      class="w-full h-screen flex justify-center items-center"
+    >
+      <h1
+        class="bg-white px-10 py-5 shadow-2xl font-light text-[2em] text-[#262d3d]"
+      >
+        Prees any key to get the javaScript event keycode
+      </h1>
+    </div>
+
+    <div
+      id="displa-on"
+      style="display: none"
+      class="w-full h-screen flex flex-col justify-center items-center"
+    >
+      <h1 id="keycode" class="text-[#262d3d] text-[15em]">2</h1>
+      <div class="w-full h-[25vh] flex justify-around items-center mt-20">
+        <div
+          class="bg-slate-200 w-[21%] h-[85%] rounded-2xl shadow-xl ml-8 hover:-translate-y-6 hover:scale-105 duration-300"
+        >
+          <div
+            class="w-full flex justify-center items-center h-[25%] bg-blue-300 rounded-t-2xl"
+          >
+            event.key
+          </div>
+          <div
+            class="flex justify-center items-center h-[75%] w-full text-[3.6em]"
+            id="event-key"
+          >
+            s
+          </div>
+        </div>
+        <div
+          class="bg-slate-200 w-[21%] h-[85%] rounded-2xl shadow-xl hover:-translate-y-6 hover:scale-105 duration-300"
+        >
+          <div
+            class="w-full flex justify-center items-center h-[25%] bg-blue-300 rounded-t-2xl"
+          >
+            event.location
+          </div>
+          <div
+            class="flex justify-center items-center h-[75%] w-full text-[3.6em]"
+            id="event-location"
+          >
+            0
+          </div>
+        </div>
+        <div
+          class="bg-slate-200 w-[21%] h-[85%] rounded-2xl shadow-xl hover:-translate-y-6 hover:scale-105 duration-300"
+        >
+          <div
+            class="w-full flex justify-center items-center h-[25%] bg-blue-300 rounded-t-2xl"
+          >
+            event.which
+          </div>
+          <div
+            class="flex justify-center items-center h-[75%] w-full text-[3.6em]"
+            id="event-which"
+          >
+            83
+          </div>
+        </div>
+        <div
+          class="bg-slate-200 w-[21%] h-[85%] rounded-2xl shadow-xl mr-8 hover:-translate-y-6 hover:scale-105 duration-300"
+        >
+          <div
+            class="w-full flex justify-center items-center h-[25%] bg-blue-300 rounded-t-2xl"
+          >
+            event.code
+          </div>
+          <div
+            class="flex justify-center items-center h-[75%] w-full text-[3.6em]"
+            id="event-code"
+          >
+            key
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
